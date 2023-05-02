@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/RunApp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="RunApp" />
+
+        <LinearLayout
+            android:id="@+id/RunAppPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RunApp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/Run"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Run" />
+
+            <Button
+                android:id="@+id/Break"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Break" />
+
+            <Button
+                android:id="@+id/Debug"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Debug" />
+
+            <Button
+                android:id="@+id/Step"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Step" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="312dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/SaveLoad"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Save/Load" />
+
+        <LinearLayout
+            android:id="@+id/SaveLoadPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SaveLoad"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/Load"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Load" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
